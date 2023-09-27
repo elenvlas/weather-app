@@ -1,0 +1,95 @@
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.list-city {
+  margin-top: 50px;
+}
+
+.row-city {
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.col-change {
+  padding: 0;
+}
+
+.title-city {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.col-icon {
+  font-size: 24px;
+  align-self: center;
+}
+
+.temperature {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.degree {
+  position: relative;
+  top: -30%;
+  text-decoration: none;
+}
+
+.degree:hover {
+  text-decoration: underline;
+}
+
+a.celsius span {
+  color: #212529;
+}
+
+.col-options {
+  align-self: center;
+}
+
+.row-option {
+  text-align: end;
+}
+
+.col-card {
+  padding: 0;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.card-border {
+  border-color: transparent;
+}
+
+.card-day {
+  margin-bottom: 0;
+}
+
+.card-icon {
+  text-align: center;
+  font-size: 24px;
+  padding: 8px 0 8px;
+}
+
+.card-body p,
+.card-body i {
+  opacity: 0.5;
+}
+
+.celsius {
+  text-decoration: none;
+}
