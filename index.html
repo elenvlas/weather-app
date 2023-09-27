@@ -1,9 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d51e36d4d1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="text-center list-city">
+        <ul class="row row-cols-auto row-city">
+          <li class="col">
+            <a href="">Lisbon</a>
+          </li>
+          <li class="col">
+            <a href="">Paris</a>
+          </li>
+          <li class="col">
+            <a href="">Sydney</a>
+          </li>
+          <li class="col">
+            <a href="">San Francisco</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="row g-3">
+        <div class="col-5 col-change">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter a city"
+            id="input-city"
+          />
+        </div>
+        <div class="col-auto col-change">
+          <button type="submit" class="btn btn-primary mb-3" id="button-search">
+            Search
+          </button>
+        </div>
+        <div class="col-auto">
+          <button
+            type="submit"
+            class="btn btn-success mb-3"
+            id="button-current"
+          >
+            Current
+          </button>
+        </div>
+      </form>
+      <br />
+
+      <h1 class="title-city" id="found-city">Lisbon</h1>
+      <div id="current-data"></div>
+      <div id="description">Clouds</div>
+
+      <div class="text-center">
+        <div class="row">
+          <div class="col-auto col-icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+          <div class="col-auto">
+            <span class="temperature" id="current-temperature">24</span>
+            <a href="#" class="degree celsius" id="celsius"
+              >°С<span> |</span></a
+            >
+            <a href="#" class="degree fahrenheit" id="fahrenheit">°F</a>
+          </div>
+          <div class="col-5 col-options">
+            <div class="row-2">
+              <div class="row-option" id="humidity">
+                Humidity: <span>53</span>%
+              </div>
+              <div class="row-option" id="wind">Wind: <span>12</span>km/h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-2 col-card">
+          <div class="card card-border">
+            <div class="card-body">
+              <p class="card-day">Tue</p>
+              <i class="fa-solid fa-sun card-icon"></i>
+              <p class="card-tempr">25°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-card">
+          <div class="card card-border">
+            <div class="card-body">
+              <p class="card-day">Wed</p>
+              <i class="fa-solid fa-cloud card-icon"></i>
+              <p class="card-tempr">25°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-card">
+          <div class="card card-border">
+            <div class="card-body">
+              <p class="card-day">Thu</p>
+              <i class="fa-solid fa-sun card-icon"></i>
+              <p class="card-tempr">27°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-card">
+          <div class="card card-border">
+            <div class="card-body">
+              <p class="card-day">Fri</p>
+              <i class="fa-solid fa-cloud card-icon"></i>
+              <p class="card-tempr">25°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 col-card">
+          <div class="card card-border">
+            <div class="card-body">
+              <p class="card-day">Sat</p>
+              <i class="fa-solid fa-cloud-showers-heavy card-icon"></i>
+              <p class="card-tempr">23°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
