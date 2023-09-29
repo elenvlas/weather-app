@@ -16,6 +16,16 @@ body {
   padding-left: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
+.contact-btn {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
 ul li {
   list-style: none;
 }
